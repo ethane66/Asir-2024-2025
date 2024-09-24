@@ -7,7 +7,8 @@ charset=utf-8">
 
 <body>
     <?php
-    echo "¡Hola mundo!";
+        echo "¡Hola mundo!";
+    echo '¡Hola mundo! con comillas simples';
     ?>
 </body>
 
