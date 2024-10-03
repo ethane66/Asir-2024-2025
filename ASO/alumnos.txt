@@ -1,0 +1,7 @@
+:: variables i;j;k;l
+Carlos;Alcaraz;P@ssw0rd;2smr
+Angel;Galan;P@ssw0rd;2asir
+Pepe;Herrero;P@ssw0rd;1asir
+Lucas;Garcia;P@ssw0rd;1smr
+Manuel;Asensio;P@ssw0rd;1dam
+Carmen;Sanchez;P@ssw0rd;2dam
