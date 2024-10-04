@@ -44,6 +44,23 @@ dsadd ou "ou=asir,ou=segundo,ou=alumnosaulas,dc=valleeae,dc=local"
 dsadd ou "ou=dam,ou=segundo,ou=alumnosaulas,dc=valleeae,dc=local"
 
 
+echo "Añadiendo los equipos a las ou equiposaulas"
+
+echo "Añadiendo los equipos de primero"
+
+dsadd computer "cn=asireq1,ou=asir,ou=primero,ou=equiposaulas,dc=valleeae,dc=local"
+dsadd computer "cn=asireq2,ou=asir,ou=primero,ou=equiposaulas,dc=valleeae,dc=local"
+dsadd computer "cn=dameq1,ou=dam,ou=primero,ou=equiposaulas,dc=valleeae,dc=local"
+dsadd computer "cn=dameq2,ou=dam,ou=primero,ou=equiposaulas,dc=valleeae,dc=local"
+
+echo "Añadiendo los equipos de segundo"
+
+dsadd computer "cn=asireq1,ou=asir,ou=segundo,ou=equiposaulas,dc=valleeae,dc=local"
+dsadd computer "cn=asireq2,ou=asir,ou=segundo,ou=equiposaulas,dc=valleeae,dc=local"
+dsadd computer "cn=dameq1,ou=dam,ou=segundo,ou=equiposaulas,dc=valleeae,dc=local"
+dsadd computer "cn=dameq2,ou=dam,ou=segundo,ou=equiposaulas,dc=valleeae,dc=local"
+
+
 echo "estoy creando los usuarios"
 
 for /f "tokens=1,2,3,4 delims=; usebackq" %%i in (`type alumnos.txt`) do (
