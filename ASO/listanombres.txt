@@ -1,46 +1,22 @@
-UNIDAD	NIA PRIMER          primer apellido     segundo apellido              NOMBRE	            FECHA
-C1ASIR	11671664            Alonso              García                        David	                09/11/2007
-C1ASIR	10040591            Salas               Femández                      Adrián	            04/03/2006
-C1ASIR	10132210            stoyanova           Atanasova                     Roxana  	            15/06/2007
-C1ASIR	13204938            Swiatek                                           Nicolas PatlYk        09/01/2008
-C1ASIR	13528881            Voicu                                             Gabriel Catalin       28/04/2008
-C2ASIR	7235757             Alonso              Yáñez                         Jose Javier	        16/07/2004
-C2ASIR	7241017             Alvarez             Ortega                        Airam	                08/09/2004
-C2ASIR	7445811             Asensio             Agudelo                       Adrián	            28/12/2005
-C2ASIR	16952010            Cabrera             Choclán                       Andrés	            14/02/1974
-C2ASIR	2469515             Espadas             Lucas                         Jorge	                03/02/2005
-C2ASIR	10639054            Stoian                                            Danut Luis            05/03/2006
-C2ASIR	48222396            Vaquero             Méndez                        Alejandro	            14/01/1977
-C1DAM	10906415            Ababou              akhazzane                     Anwar                 11/04/2006
-C1DAM	1871579             Cachero             Figuieras                     Eduardo	            12/04/2001
-C1DAM	42275176            Chuello             Morales                       Leonardo Jesús	    12/07/2005
-C1DAM	8727107             Dávalos             Rosero                        Juan Sebastián	    02/11/2003
-C1DAM	11233633            Dhikar              Hajam                         Bilal	                8/05/2006
-C1DAM	9662162             Tejerizo            González                      Jorge	                27/04/2003
-C2DAM	11569091            Antón               Alonso                        Marcos	            21/11/2005
-C2DAM	4839378             Cabanas             Ojea                          Jorge	                13/09/1994
-C2DAM	2562919             Castillo            Chaus                         Ainhoa	            11/10/2005
-
-
-
-C1ASIR;11671664;Alonso;García;David;09/11/2007
-C1ASIR;10040591;Salas;Femández;Adrián;04/03/2006
-C1ASIR;10132210;stoyanova;Atanasova;Roxana;15/06/2007
-C1ASIR;13204938;Swiatek;Nicolas PatlYk;09/01/2008
-C1ASIR;13528881;Voicu;Gabriel Catalin;28/04/2008
-C2ASIR;7235757;Alonso;Yáñez;Jose Javier;16/07/2004
-C2ASIR;7241017;Alvarez;Ortega;Airam;08/09/2004
-C2ASIR;7445811;Asensio;Agudelo;Adrián;28/12/2005
-C2ASIR;16952010;Cabrera;Choclán;Andrés;14/02/1974
-C2ASIR;2469515;Espadas;Lucas;Jorge;03/02/2005
-C2ASIR;10639054;Stoian;Danut Luis;05/03/2006
-C2ASIR;48222396;Vaquero;Méndez;Alejandro;14/01/1977
-C1DAM;10906415;Ababou;akhazzane;Anwar;11/04/2006
-C1DAM;1871579;Cachero;Figuieras;Eduardo;12/04/2001
-C1DAM;42275176;Chuello;Morales;Leonardo Jesús;12/07/2005
-C1DAM;8727107;Dávalos;Rosero;Juan Sebastián;02/11/2003
-C1DAM;11233633;Dhikar;Hajam;Bilal;8/05/2006
-C1DAM;9662162;Tejerizo;González;Jorge;27/04/2003
-C2DAM;11569091;Antón;Alonso;Marcos;21/11/2005
-C2DAM;4839378;Cabanas;Ojea;Jorge;13/09/1994
-C2DAM;2562919;Castillo;Chaus;Ainhoa;11/10/2005
+::a;b;c;d;e;f;g
+C1ASIR;11671664;Alonso;García;David;09/11/2007;P@ssw0rd
+C1ASIR;10040591;Salas;Femández;Adrián;04/03/2006;P@ssw0rd
+C1ASIR;10132210;stoyanova;Atanasova;Roxana;15/06/2007;P@ssw0rd
+C1ASIR;13204938;Swiatek;Nicolas;PatlYk;09/01/2008;P@ssw0rd
+C1ASIR;13528881;Voicu;Gabriel;Catalin;28/04/2008;P@ssw0rd
+C2ASIR;7235757;Alonso;Yáñez;Jose Javier;16/07/2004;P@ssw0rd
+C2ASIR;7241017;Alvarez;Ortega;Airam;08/09/2004;P@ssw0rd
+C2ASIR;7445811;Asensio;Agudelo;Adrián;28/12/2005;P@ssw0rd
+C2ASIR;16952010;Cabrera;Choclán;Andrés;14/02/1974;P@ssw0rd
+C2ASIR;2469515;Espadas;Lucas;Jorge;03/02/2005;P@ssw0rd
+C2ASIR;10639054;Stoian;Danut;Luis;05/03/2006;P@ssw0rd
+C2ASIR;48222396;Vaquero;Méndez;Alejandro;14/01/1977;P@ssw0rd
+C1DAM;10906415;Ababou;akhazzane;Anwar;11/04/2006;P@ssw0rd
+C1DAM;1871579;Cachero;Figuieras;Eduardo;12/04/2001;P@ssw0rd
+C1DAM;42275176;Chuello;Morales;Leonardo Jesús;12/07/2005;P@ssw0rd
+C1DAM;8727107;Dávalos;Rosero;Juan Sebastián;02/11/2003;P@ssw0rd
+C1DAM;11233633;Dhikar;Hajam;Bilal;8/05/2006;P@ssw0rd
+C1DAM;9662162;Tejerizo;González;Jorge;27/04/2003;P@ssw0rd
+C2DAM;11569091;Antón;Alonso;Marcos;21/11/2005;P@ssw0rd
+C2DAM;4839378;Cabanas;Ojea;Jorge;13/09/1994;P@ssw0rd
+C2DAM;2562919;Castillo;Chaus;Ainhoa;11/10/2005;P@ssw0rd
