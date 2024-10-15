@@ -24,6 +24,8 @@ Ejercicio 5: Escribe la estructura for del ejercicio 4 utilizado la sintaxis de 
 Ejercicio 6: Escribir un script en PHP que muestre los números del 20 al 1. Primero con una
 estructura while y depués con una estructura for ambas con la sintaxis de dos puntos.
 
+
+
 Ejercicio 7: ¿Cuál es el resultado de la ejecución de estas instrucciones?
     for($i=1;$i<=50;$i++):
         if($i % 5 == 0):
