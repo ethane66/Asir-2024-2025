@@ -32,5 +32,3 @@
    - Evaluaciones Regulares: Se sugiere realizar auditorías de seguridad de manera regular para evaluar la efectividad de las medidas de seguridad implementadas y detectar áreas de mejora.
    - Cumplimiento Normativo: Se menciona la importancia de cumplir con normativas y estándares de seguridad, como ISO 27001, para garantizar un enfoque sistemático en la gestión de la seguridad de la información.
 
-Este resumen más complejo proporciona una visión integral de los temas tratados en las diapositivas del 9 al 45, abarcando tanto las amenazas como las contramedidas y las mejores prácticas en seguridad informática. Si necesitas más información sobre un aspecto específico, no dudes en preguntar.
-
