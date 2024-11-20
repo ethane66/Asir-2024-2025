@@ -1,0 +1,75 @@
+creacion usuarios en windows server CLI
+
+Grupos y usuarios server valleeae
+
+
+->creacion de la ou grupos
+
+dsadd ou "OU=grupos,DC=valleae,DC=local"
+
+->Creacion del grupo global direccion
+
+dsadd group "CN=direccion,OU=grupos,DC=valleae,DC=local"
+
+-Creacion de la ou usuarios
+
+dsadd ou "OU=usuarios,DC=valleae,DC=local"
+
+
+-creamos los usuarios y los añadimos al grupo direccion
+
+dsadd user "CN=Director,OU=usuarios,DC=valleae,DC=local" -pwd Passw0rd -memberof "CN=direccion,OU=grupos,DC=valleae,DC=local"
+dsadd user "CN=JefePrimario,OU=usuarios,DC=valleae,DC=local" -pwd Passw0rd -memberof "CN=direccion,OU=grupos,DC=valleae,DC=local"
+dsadd user "CN=JefeSecundario,OU=usuarios,DC=valleae,DC=local" -pwd Passw0rd -memberof "CN=direccion,OU=grupos,DC=valleae,DC=local"
+
+Grupos y usuarios server asir.valleeae.local
+
+->creacion de la ou gruposasir
+
+dsadd ou "OU=gruposasir,DC=asir,DC=valleae,DC=local"
+
+->Creacion del grupo local cordinacion
+
+dsadd group "CN=cordinacion,OU=gruposasir,DC=asir,DC=valleae,DC=local"
+
+->creacion del grupo local secretaria
+
+dsasdd group "CN=secretaria,OU=gruposasir,DC=asir,DC=valleae,DC=local"
+
+->creacion del grupo local administracion
+
+dsadd group "CN=administracion,OU=gruposasir,DC=asir,DC=valleae,DC=local"
+
+
+->creacion de la ou usuariosasir
+
+dsadd ou "OU=usuariosasir,DC=asir,DC=valleae,DC=local"
+
+->creamos los usuarios y los añadimos a los gruposasir
+
+dsadd user "CN=JefeAsir,OU=usuariosasir,DC=asir,DC=valleae,DC=local" -pwd Passw0rd -memberof "CN=cordinacion,OU=grupos,DC=asir,DC=valleae,DC=local"
+dsadd user "CN=Secretario,OU=usuariosasir,DC=asir,DC=valleae,DC=local" -pwd Passw0rd -memberof "CN=secretaria,OU=grupos,DC=asir,DC=valleae,DC=local"
+dsadd user "CN=auxiliar,OU=usuariosasir,DC=asir,DC=valleae,DC=local" -pwd Passw0rd -memberof "CN=secretaria,OU=grupos,DC=asir,DC=valleae,DC=local"
+
+->Añadir los grupos globales a los locales
+
+dsmod group "CN=cordinacion,OU=gruposasir,DC=asir,DC=valleae,DC=local" -addmbr "CN=direccion,OU=grupos,DC=valleae,DC=local"
+
+Grupos y usuarios en servvidor ade.valleeae.local
+
+
+->Creacion de la ou grupos
+
+dsadd ou "OU=grupos,DC=ade,DC=valleae,DC=local"
+
+->Creacion del grupo global Jefes
+
+dsadd group "CN=Jefes,OU=gruposade,DC=ade,DC=valleae,DC=local"
+
+creacion de la ou usuariosade
+
+dsadd ou "OU=usuariosade,DC=ade,DC=valleae,DC=local"
+
+->creacion de los usuarios y añadirlos al grupo
+
+dsadd user "CN=JefeAde,OU=usuariosade,DC=ade,DC=valleae,DC=local" -pwd Passw0rd -memberof "CN=Jefes,OU=grupos,DC=ade,DC=valleae,DC=local"
