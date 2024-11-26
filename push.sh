@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Navigate to the script's directory
-cd "$(dirname "$0")"
-
 # Add all changes
 git add .
 
