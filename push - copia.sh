@@ -1,35 +1,51 @@
 #!/bin/bash
 
-# Add all changes
-git add .
+# Función para agregar todos los archivos, solicitar un mensaje de commit y hacer push
+function commit_and_push() {
+  git add .
+  read -p "Ingrese el mensaje de commit: " commit_message
+  git commit -m "$commit_message"
+  git push
+  echo "Commit y push realizados correctamente."
+}
 
-# Check if the add command was successful
-if [ $? -ne 0 ]; then
-    echo "Failed to add changes."
-    exit 1
-fi
+# Función para hacer push y apagar el ordenador después de un tiempo
+function push_and_shutdown() {
+ git add .
+  read -p "Ingrese el mensaje de commit: " commit_message
+  git commit -m "$commit_message"
+  git push
+  echo "Commit y push realizados correctamente."
+  read -p "Ingrese el tiempo de espera en segundos antes de apagar (0 para cancelar): " wait_time
+  if [[ $wait_time -gt 0 ]]; then
+    echo "Apagando en $wait_time segundos..."
+    sleep $wait_time
+    shutdown -h now
+  fi
+}
 
-# Prompt for commit message
-echo 'Enter the commit message:'
-read commitMessage
+# Menú principal
+while true; do
+  clear
+  echo "Menú de opciones Git:"
+  echo "1. Commit y push"
+  echo "2. Push y apagar"
+  echo "3. Salir"
+  read -p "Ingrese una opción: " option
 
-# Commit changes
-git commit -m "$commitMessage"
-
-# Check if the commit command was successful
-if [ $? -ne 0 ]; then
-    echo "Failed to commit changes."
-    exit 1
-fi
-
-# Push changes
-git push
-
-# Check if the push command was successful
-if [ $? -ne 0 ]; then
-    echo "Failed to push changes."
-    exit 1
-fi
-
-# Sleep for 2 seconds
-sleep 2s
+  case $option in
+    1)
+      commit_and_push
+      ;;
+    2)
+      push_and_shutdown
+      ;;
+    3)
+      echo "Saliendo..."
+      break
+      ;;
+    *)
+      echo "Opción inválida."
+      ;;
+  esac
+done
