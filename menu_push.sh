@@ -20,7 +20,7 @@ function push_and_shutdown() {
   if [[ $wait_time -gt 0 ]]; then
     echo "Apagando en $wait_time segundos..."
     sleep $wait_time
-    shutdown -h now
+    shutdown -s -t 0
   fi
 }
 
