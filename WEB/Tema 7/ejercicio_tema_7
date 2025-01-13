@@ -1,0 +1,4 @@
+//1: COnectar con el servidor de base de datos
+$conexion = mysqli_connect('localhost', 'root','') or die('No se puede conectar con el servidor');
+
+//2
