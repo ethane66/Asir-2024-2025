@@ -1,0 +1,24 @@
+El ejercicio sacará una tabla de muliplicar que hará un bucle hasta que x = 5 veces en el que se calculará:
+$x * $yo, $x+1 * $yo, $x+2 * $yo, $x+3 * $yo, $x+4 * $yo    
+
+Así 5 veces porque el while interno solo lo hace hasta que x sea menor o igual a 5
+Después de salir del while interno se sumará +1 a $yo, y se repetirá el bucle externo hasta que $yo = 5 dando igual al siguiente supuesto resultado:
+$x * $yo,   $x+1 * $yo,   $x+2 * $yo,   $x+3 * $yo,   $x+4 * $yo 
+$x * $yo+1, $x+1 * $yo+1, $x+2 * $yo+1, $x+3 * $yo+1, $x+4 * $yo+1 
+$x * $yo+2, $x+1 * $yo+2, $x+2 * $yo+2, $x+3 * $yo+2, $x+4 * $yo+2 
+$x * $yo+3, $x+1 * $yo+3, $x+2 * $yo+3, $x+3 * $yo+3, $x+4 * $yo+3 
+$x * $yo+4, $x+1 * $yo+4, $x+2 * $yo+4, $x+3 * $yo+4, $x+4 * $yo+4 
+
+Siendo x y yo = 1 las operaciones serían:
+1*1, 2*1, 3*1, 4*1, 5*1
+1*2, 2*2, 3*2, 4*2, 5*2
+1*3, 2*3, 3*3, 4*3, 5*3
+1*4, 2*4, 3*4, 4*4, 5*4
+1*5, 2*5, 3*5, 4*5, 5*5
+
+El equivalente sería:
+1    2    3    4    5  
+2    4    6    8    10  
+3    6    9    12   15  
+4    8    12   16   20  
+5    10   15   20   25 
