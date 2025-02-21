@@ -42,3 +42,6 @@ do
     # Incrementar el contador
     ((i++))
 done
+
+#Hacerlo repetitivo
+
