@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-read -p "año de nacimiento (4cifras):" AN
+read -n4 -p "año de nacimiento (4cifras):" AN
 let resto=$AN%12
 case $resto in
 0)HOROS="Mono";;
