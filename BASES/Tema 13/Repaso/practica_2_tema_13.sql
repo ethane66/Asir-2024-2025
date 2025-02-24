@@ -58,14 +58,7 @@ contraseña "usuario3". ¿Cuál/es de las siguientes formas es válida?. Para la
 válidas debes indicar todos los pasos.
 
 a) Conectado desde el usuario3.
-    - Conéctate como usuario3:
-      ```sql
-      ./mysql.exe -uusuario3 -puser3
-      ```
-    - Asigna la nueva contraseña:
-      ```sql
-      alter user 'usuario3'@'localhost' identified by 'usuario3';
-      ```
+    No se puede
 
 b) Conectado desde el usuario4.
     - No es posible, ya que el usuario4 no tiene permisos suficientes para cambiar la contraseña de otro usuario.
