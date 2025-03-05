@@ -1,23 +1,29 @@
 #!/bin/bash
 
-# Pedir al usuario un número
-read -p "Introduce un número entre 1 y 9: " num
+#Crea un shellscript llamado factorial.bash que muestre en pantalla el resultado del factorial del numero solicitado.
+#El factorial de un numero hay que ejecutarlo como se dice a continuacion
+#ejemplo 3!=1*2*3=6
+#Solo podemos hacer el factorial de los numero entre el 1 y el 9, cualquier otro valor introducido no halla el factorial y se muestra el mensaje "El numero introducido "valor introducido" no es un valor correcto"
+#Visualizar el resultado igual que el ejemplo siguiente
 
-# Validar que el número esté entre 1 y 9
-if [[ $num -lt 1 -o $num -gt 9 ]]; then
-    echo "El número introducido '$num' no es un valor correcto"
-    exit 1
+
+read -p "Dame un numero del 1 al 9 -> " num
+if [ "$num" -lt 1 -o  "$num" -gt 9 ]; then
+    echo "El número introducido $num no es un valor correcto"
+    exit
 fi
 
-# Inicializar el factorial y la secuencia
 factorial=1
-secuencia="1"
+lista=0
 
-# Calcular el factorial
-for (( i=2; i<=num; i++ )); do
-    factorial=$(( factorial * i ))
-    secuencia+="*$i"
+for (( i=1; i<=num; i++ )); do
+    factorial=$((factorial * i))
+
+    if [[ $i -eq 1 ]]; then
+        lista="$i"
+    else
+        lista="$lista * $i"
+    fi
 done
 
-# Mostrar el resultado en el formato especificado
-echo "$num!=$secuencia=$factorial"
+echo "$num! = $lista = $factorial"
