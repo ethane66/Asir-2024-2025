@@ -10,8 +10,8 @@ while [ $# -gt 0 ]; do
         echo "El parametro introducido no esta entre 1 y 9"
     else
         factorial=1
-            for (( $i=$1; i>1; i-- ))
-                factorial=$( $factorial * $i )
+            for (( i=$1; i>1; i-- )); do
+                factorial=$(expr $factorial \* $i)
             done
             echo "El factorial de $1 es $factorial"
         fi
